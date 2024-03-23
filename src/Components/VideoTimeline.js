@@ -82,6 +82,7 @@ const VideoTimeline = () => {
         <source src={myvideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      <div className='timeline'>
      <div className='song-info'>
       <div className='song-property'>
         < RiScissorsLine /><span>split</span><span>Add media</span>
@@ -102,6 +103,7 @@ const VideoTimeline = () => {
         <div className="background-image" style={{ backgroundImage: `url(${backgroundImage})` }}>
           <div className="track-line" style={{ left: 'var(--scale-line-left, 0)' }}></div>
         </div>
+      </div>
       </div>
       <div className="split-video-controls">
         <label htmlFor="split-size">Split Size (seconds):</label>

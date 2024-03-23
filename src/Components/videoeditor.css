@@ -134,3 +134,16 @@ color: gray;
 .right-video{
 width: 80%;
 }
+
+
+@media screen and (max-width:768px){
+     .images-col{
+        width: 10%;
+     }
+     .property-col{
+        width: 20%;
+     }
+     .video-col{
+        width: 70%;
+     }
+}
