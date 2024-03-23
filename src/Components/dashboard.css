@@ -1,0 +1,227 @@
+.dash-wrapper{
+    /* margin:2rem; */
+    /* padding: 2rem; */
+
+}
+
+
+
+
+
+.Dashboard-container{
+    display: flex;
+
+    justify-content: space-between;
+    /* margin:2rem; */
+   
+
+}
+
+.dash-left{
+    width: 25%;
+    height: 100vh;
+
+    padding:2rem ;
+}
+
+.dash-right{
+    background-color: rgb(236, 234, 234);
+    width: 75%;
+    height: 100vh;
+    padding:2rem ;
+/* padding-left: 10px; */
+}
+.button{
+    padding: 12px 14px;
+    width: 60%;
+    border-radius: 10px;
+}
+.left-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.new-btn{
+    display: flex;
+   justify-content: space-between;
+   background-color: rgb(64, 151, 238);
+   border: none;
+   width: 60%;
+   color: white;
+}
+.new-btn span{
+    font-size: 18px;
+}
+.home-btn{
+    border: none;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    align-items: center;
+    background-color: rgb(241, 238, 238);
+}
+.home-icon{
+    font-size: 18px;
+}
+
+.Item-list{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+.Item-list li{
+    list-style-type: none;
+}
+
+.Item-list svg{
+font-size: 20px;
+}
+.list-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Buttons{
+    display: flex;
+   width: 100%;
+    gap: 10px;
+
+}
+
+.Buttons .btn{
+    padding: 15px 8px;
+    background-color: white;
+    border:1px solid  rgb(172, 169, 169);
+    width:20%;
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* justify-content: space-between; */
+}
+.Buttons span{
+    font-weight: 600;
+}
+.Buttons .icon{
+background-color: red;
+padding: 5px;
+border-radius: 10px;
+font-size: 22px
+
+}
+.Buttons .icon-1{
+
+    color: blueviolet;
+    background-color: rgb(233, 229, 238);
+}
+.Buttons .icon-2{
+    color: red;
+    background-color: rgb(237, 218, 218);
+}
+.Buttons .icon-3{
+    color: aqua;
+    background-color: rgb(216, 239, 239);
+}
+.Buttons .icon-4{
+    color:orange;
+    background-color:rgb(236, 226, 206);
+}
+.My-video{
+    margin-top: 30px;
+}
+
+.video-section{
+    width: 50%;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width:512px) {
+    
+    .dash-left{
+        width: 20%;
+    }
+    .left-btn{
+        width: 100%;
+    }
+    .new-btn ,.home-btn{
+        width: 100%;
+        display: flex;
+        /* flex-direction: column; */
+        /* align-items: center; */
+        padding: 2px 30px;
+        justify-content: space-between;
+        /* justify-content:left; */
+    }
+
+    .home-btn{
+        padding: 10px;
+    }
+    .Item-list{
+        display: flex;
+        flex-direction: column;
+         justify-content: flex-start;
+        gap: 30px;
+        font-size: 16px;
+        margin-left: -30px;
+        align-items:center;
+    }
+    .Buttons{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width:100%;
+    }
+.Buttons .btn{
+    width: 100%;
+    background-color: white;
+}
+
+.video-section{
+    width: 70%;
+    border-radius: 10px;
+}
+}
+
+
+@media screen and (max-width:784px) {
+
+    .new-btn {
+        width: 100%;
+    }
+    .home-btn{
+width: 100%;
+    }
+.Buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.Buttons .btn{
+    width: 100%;
+    background-color: white;
+}
+.video-section{
+    width: 70%;
+}
+}
+
+
+@media (min-width: 784px) and (max-width:1160px) {
+    
+    .new-btn {
+        width: 100%;
+    }
+    .home-btn{
+width: 100%;
+    }
+    .Buttons{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    } 
+
+    .Buttons .btn{
+        width: 100%;
+        background-color: white;
+    }
+}
